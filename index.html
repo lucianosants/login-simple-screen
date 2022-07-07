@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="wrapper-container">
+				<section class="form-container">
+					<header class="header">
+						<h2>Login</h2>
+						<h4>Enter your User and Password to access account.</h4>
+					</header>
+					<form
+						action="./pages/login-done.html"
+						method="get"
+						class="login-form"
+					>
+						<div class="user-container">
+							<label for="user">User</label>
+							<input
+								type="text"
+								class="user"
+								placeholder="Type your user"
+								id="user"
+							/>
+						</div>
+
+						<div class="password-container">
+							<label for="password">Password</label>
+							<input
+								type="text"
+								class="password"
+								placeholder="Type your password"
+								id="password"
+							/>
+						</div>
+
+						<div class="button-container">
+							<button type="submit">Enviar</button>
+						</div>
+					</form>
+
+					<div class="recovery-password-container">
+						<a href="#">Forgot your password?</a>
+					</div>
+				</section>
+
+				<div class="ilustration-container">
+					<img src="./assets/undraw_feeling_happy_jymo.svg" alt="" />
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

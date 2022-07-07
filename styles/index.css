@@ -1,0 +1,128 @@
+main {
+	height: 100%;
+}
+
+.wrapper-container {
+	padding-block: 7rem;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	width: 100%;
+}
+
+.form-container {
+	height: 100%;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.header {
+	flex-grow: 1;
+}
+
+.header h2 {
+	font-size: 5rem;
+	color: var(--title-h1);
+	position: relative;
+}
+
+.header h2::before {
+	content: '';
+	border-bottom: 0.5rem solid var(--brand);
+	border-radius: 0.7rem;
+	position: absolute;
+	width: 5rem;
+	bottom: 0.5rem;
+}
+
+.header h4 {
+	color: var(--text-secondary);
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.login-form {
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.login-form div {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	text-align: left;
+	cursor: pointer;
+}
+
+input {
+	padding: 2rem;
+	margin-top: 0.5rem;
+	border: none;
+	font-size: 1.6rem;
+	border-radius: 0.6rem;
+	background: var(--bg-input);
+	position: relative;
+}
+
+input::placeholder {
+	color: var(--text-placeholder);
+}
+
+.button-container button {
+	padding: 2rem;
+	border-radius: 0.6rem;
+	background: var(--brand);
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+.button-container button:hover {
+	filter: brightness(0.6);
+}
+
+.recovery-password-container a {
+	color: var(--text-secondary);
+	transition: 0.2s;
+}
+
+.recovery-password-container a:hover {
+	text-decoration: underline wavy var(--link-hover) 0.2rem;
+	color: var(--text);
+}
+
+.ilustration-container {
+	display: none;
+}
+
+@media (min-width: 720px) {
+	.wrapper-container {
+		width: min(112rem, 100%);
+		display: flex;
+		justify-content: space-between;
+		gap: 25rem;
+	}
+
+	.form-container {
+		flex-grow: 3;
+		flex-basis: 60%;
+	}
+
+	.ilustration-container {
+		display: flex;
+		flex-grow: 1;
+		flex-basis: 40%;
+	}
+
+	.ilustration-container img {
+		width: 100%;
+	}
+}
