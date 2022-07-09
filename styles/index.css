@@ -103,6 +103,14 @@ input::placeholder {
 	display: none;
 }
 
+.error {
+	color: var(--underline-error);
+	font-weight: 400;
+	font-size: 1.7rem;
+	text-align: left;
+	text-decoration: underline 0.2rem var(--underline-error);
+}
+
 @media (min-width: 720px) {
 	.wrapper-container {
 		width: min(112rem, 100%);

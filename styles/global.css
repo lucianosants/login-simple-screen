@@ -14,6 +14,7 @@
 	--title-h1: #f6ebff;
 	--text-placeholder: black;
 	--link-hover: rgb(255, 77, 77);
+	--underline-error: #ff6565;
 }
 
 html {
